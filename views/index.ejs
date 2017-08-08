@@ -1,0 +1,12 @@
+<h1>Here are all the elephants!</h1>
+<ul>
+    <% for(var i in elephants){ %>
+        <li>
+            <a href='/elephants/edit/<%= elephants[i].id %>'>
+                <%= elephants[i].name %>, age
+                    <%= elephants[i].age %>
+            </a>
+        </li>
+        <% } %>
+</ul>
+<a href='/new'>Add a new elephant!</a>

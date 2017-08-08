@@ -1,0 +1,11 @@
+<h1>Edit</h1>
+<form action='/elephants/destroy/<%= elephant.id %>' method="POST">
+    <button>Delete this elephant</button>
+</form>    
+<form action="/elephants/<%= elephant.id %>" method="POST">
+    <label>Elephant's name:</label>
+    <input type="text" value="<%= elephant.name %>" name="name"><br>
+    <label>Age:</label>
+    <input type="text" value="<%= elephant.age %>" name="age"><br>
+    <input type="submit" value="Update Elephant">
+</form>    
